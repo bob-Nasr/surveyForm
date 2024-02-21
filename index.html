@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1 id="title">GetToKnow Survey</h1>
+    <p id="description">By participating, you will get to know many people</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+
+      <label id="number-label">Age</label>
+      <input
+        id="number"
+        type="number"
+        placeholder="Enter your age"
+        min="0"
+        max="100"
+        required
+      />
+
+      <label id="gender-label">Gender</label>
+      <label for="gender"
+        ><input
+          class="radio"
+          type="radio"
+          name="gender"
+          value="male"
+        />Male</label
+      >
+      <label for="gender"
+        ><input
+          class="radio"
+          type="radio"
+          name="gender"
+          value="female"
+        />Female</label
+      >
+      <label for="gender"
+        ><input
+          class="radio"
+          type="radio"
+          name="gender"
+          value="nonbinary"
+        />Non-binary</label
+      >
+      <label for="gender"
+        ><input
+          class="radio"
+          type="radio"
+          name="gender"
+          value="other"
+          checked
+        />Other</label
+      >
+
+      <label id="hobbies-label">Hobbies</label>
+      <label for="hobbies"
+        ><input class="checkbox" type="checkbox" value="sports" />Sports</label
+      >
+      <label for="hobbies"
+        ><input class="checkbox" type="checkbox" value="art" />Art</label
+      >
+      <label for="hobbies"
+        ><input
+          class="checkbox"
+          type="checkbox"
+          value="tech"
+        />Technology</label
+      >
+      <label for="hobbies"
+        ><input
+          class="checkbox"
+          type="checkbox"
+          value="other"
+          checked
+        />Other</label
+      >
+
+      <label id="role-label">Role</label>
+      <select name="role" id="dropdown">
+        <option value="student">Student</option>
+        <option value="fulltime">Full Time Job</option>
+        <option value="parttime">Part Time Job</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="no" selected="selected">Prefer not to say</option>
+      </select>
+
+      <label id="description-label"
+        >Write a short paragraph about yourself:</label
+      >
+      <textarea placeholder="Description"></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
